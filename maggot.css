@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    font-family: "Protest Guerrilla", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background1.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #deb992;
+    font-size: larger;
+    font-weight: 400;
+}
+.content h1 span{
+    color:  #eb5406;
+}
+
+.content p span{
+    color: #1BA098;
+}
+.content button{
+    background: transparent;
+    border: 1.5px solid  #1BA098;
+    outline: #1BA098;
+    padding: 6px 0px;
+    color: #1BA098;
+    cursor: pointer;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px ;
+}
+.float{
+    transform: translate(-50%, -50%);
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #eb5406;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    width: 55%;
+    height: 2px;
+    background: #1BA098;
+    position: absolute;
+    bottom: -4px;
+    right: 20px ;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1BA098;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
